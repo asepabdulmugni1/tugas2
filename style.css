@@ -1,0 +1,154 @@
+    *{
+      font-family: Arial;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: white;
+    }
+    table{
+      height: 100vh;
+      width: 100%;
+    }
+    .card{
+      width: 90%;
+      background:linear-gradient(to bottom right,dodgerblue,#a600a6);
+            border-radius: 20px;
+      padding: 10px 15px;
+      box-shadow: 2px 2px 2px gray;
+    }
+    .header{
+      background:linear-gradient(to bottom right,dodgerblue,#a600a6);
+      color: white;
+      height: 15vh;
+    }
+    .header hr,
+    .header .wadahpesan{
+      width: 70%;
+      position: relative;
+    }
+    .header .wadahpesan img{
+      animation: shake 1s ease-in-out infinite;
+      height: 30px;
+      z-index: 2;
+      position: absolute;
+      top: -5px;
+      left: -10px;
+    }
+    /*bagian Navbar*/
+    .navbar,
+    .content{
+      vertical-align: top;
+      padding: 20px 10px 20px 10px;
+    }
+
+    .navbar{
+      width: 20%;
+    }
+    .navbar a{
+      display: flex;
+      flex-direction: column;
+      font-size: 1.2rem;
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+      justify-content: center;
+      align-items: center;
+    }
+    .navbar a img{
+      height: 25px;
+    }
+   /*bagian Navbar*/
+   
+    /*Bagian Content*/
+    .content{
+      width: 100%;
+      height: 75vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: scroll;
+    }
+    .content h2{
+      color: green;
+      margin-bottom: 20px;
+    }
+    .content b{
+      font-size: 1.1rem;
+    }
+    .content img{
+      width: 70%;
+      margin-bottom: 20px;
+      border-radius: 50%;
+ animation: berputar 5s infinite linear;
+    }
+    .content button{
+      background: linear-gradient(to right,blue,purple) ;
+      padding: 5px 10px;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      margin-top: 30px;
+      margin-bottom: 20vh;
+    }
+    .content button:hover{
+      background: linear-gradient(to right,blue,purple) ;
+      animation: warna-warni 2s infinite;
+      padding: 5px 10px;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+    .content button a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    }
+    .card table{
+      height: 40vh;
+    }
+    .card table tr td {
+      font-weight: bold;
+      text-align: center;
+      color: white;
+    }
+    /*Bagian Content*/
+    
+    /*Bagian footer*/    
+    .footer{
+      height: 10vh;
+      background-color: purple;
+      color: white;
+    }
+    /*Bagian footer*/
+    @keyframes warna-warni{
+      0%{
+       background: linear-gradient(to right,blue,purple) ;
+      }
+      50%{
+      background: linear-gradient(to right,purple,red) ;
+      }
+      100%{
+      background: linear-gradient(to right,red,blue) ;  
+      }
+    }
+    
+    @keyframes shake{
+      0%{
+        transform: rotate(30deg);
+      }
+      50%{
+        transform: rotate(-30deg);
+      }
+      100%{
+        transform: rotate(30deg);
+      }
+    }
+    @keyframes berputar{
+      0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+    }
